@@ -1,0 +1,26 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+
+
+
+{% block app_content %}
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+    <h1>{{ title }}</h1>
+
+  </div>
+</div><!-- ends row for title -->
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+    <!-- using jinja  read it-->
+    {{ wtf.quick_form(form) }}
+
+  </div>
+</div><!-- ends row for form -->
+
+
+{% endblock %}

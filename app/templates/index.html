@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+
+{% block app_content %}
+
+<div class="row">
+  <div class="col-md-12">
+    {% if header !='' %}
+    <h1>{{ header }}</h1>
+    {% else %}
+    <h1>{{ title }}</h1>
+    {% endif %}
+  </div>
+</div><!-- ends row -->
+
+
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+    <h1>{{ title }}</h1>
+
+  </div>
+</div><!-- ends row for title -->
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+
+
+    </div><!-- ends call 8 for post section -->
+  </div>
+
+  {% for product in products %}
+
+  {% if loop.index == 1 or loop.index % 3 == 1 %}
+  <div class="row">
+
+  {% endif %}
+    <div class="col-md-4">
+      <div class="card">
+        <img src="http://placehold.it/250x250" alt="Placeholder" class="card-img">
+        <div class="card-title"> {{ product.make }}  {{ product.model }}</div>
+        <div class="card-text">
+          <p>{{product.year}}  {{product.color}}</p>
+        </div>
+
+      </div> <!--ends card-->
+    </div> <!--emds col 4 for card -->
+  {% if loop.index %3 == 0 %}
+  </div><!-- ends row for cards -->
+  {% endif %}
+{% endfor %}
+
+{% endblock %}

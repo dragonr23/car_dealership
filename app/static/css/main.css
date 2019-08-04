@@ -1,0 +1,93 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top:100px;
+}
+
+.container>.row {
+  margin-top: 50px;
+}
+
+.banner {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card-img {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 130%;
+  font-weight: bold;
+
+}
+
+.card-subtitle {
+  font-size: 90%;
+  font-style: italic;
+}
+
+.card>.card-text>p {
+  height: 75px;
+  width:400px;
+}
+.card>.profile_text>p{
+  width: 320px;
+}
+
+
+.card>.btn {
+  display:block;
+  width: 80%;
+  margin: 15px auto;
+}
+
+.tweet {
+  margin-top: 60px;
+
+}
+
+.date {
+  color: gray;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.handle {
+  top: 40px;
+}
+
+.small-margin {
+  margin-top: 25px;
+}
+
+.post-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.work {
+  background-color: black;
+  margin-top: 100px;
+}
+
+footer p {
+  color: rgba(255,255,255,0.5);
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}

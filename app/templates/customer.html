@@ -1,0 +1,44 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+
+
+
+{% block app_content %}
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+    <h1>{{ title }}</h1>
+
+  </div>
+</div><!-- ends row for title -->
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+
+    <!-- using jinja  read it-->
+    {{ wtf.quick_form(form) }}
+
+  </div>
+</div><!-- ends row for form -->
+
+  {% for c in customer.vehichles %}
+    {% if first_name[0] == c.first_name %}
+
+
+      <!-- <p>First Name: {{ c.first_name }}</p>
+      <p>Last Name: {{ c.last_name }}</p>
+      <p>Phone Number: {{ c.phone_num }}</p> -->
+      <p> {{ customer.vin }}</p>
+      <p></p>
+
+    {% endif %}
+
+  {% endfor %}
+
+
+
+
+
+
+{% endblock %}
